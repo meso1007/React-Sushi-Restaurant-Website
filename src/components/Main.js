@@ -18,6 +18,7 @@ const Main = ({ title, p, isVideo = true, img, textPosition = "center" }) => {
             autoPlay
             loop
             muted
+            playsInline
           />
         </div>
       )}
@@ -29,7 +30,7 @@ const Main = ({ title, p, isVideo = true, img, textPosition = "center" }) => {
         />
       )}
 
-      <div className="relative z-10 ">
+      <div className="relative z-10">
         <h2 className="main-title text-6xl sm:text-9xl font-bold mb-4 text-white">
           {title}
         </h2>
