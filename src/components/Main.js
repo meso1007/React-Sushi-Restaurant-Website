@@ -7,18 +7,25 @@ const Main = ({ title, p, isVideo = true, img, textPosition = "center" }) => {
       className={`relative h-screen flex items-center justify-${textPosition} text-${textPosition}`}
     >
       {isVideo && (
-        <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
-          src="./Assets/bg-sushi.mp4"
-          autoPlay
-          loop
-          muted
-        />
+        <div
+          className={`video-container absolute top-0 left-0 w-full h-full ${
+            textPosition === "center" ? "z-0" : ""
+          }`}
+        >
+          <video
+            className="w-full h-full object-cover"
+            src="./Assets/bg-sushi.mp4"
+            autoPlay
+            loop
+            muted
+          />
+        </div>
       )}
       {!isVideo && (
         <img
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
           src={img}
+          alt="Background"
         />
       )}
 

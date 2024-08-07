@@ -58,7 +58,7 @@ const Home = () => {
         bgColor={"black"}
       />
       <SlideInSection />
-      <div className="py-16">
+      <div className="py-16 text-center">
         <Review reviews={reviews} />
       </div>
     </div>

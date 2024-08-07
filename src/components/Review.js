@@ -32,22 +32,22 @@ const Review = (props) => {
     <div
       id="reviews"
       ref={ref}
-      className={`min-h-screen flex flex-col items-center justify-center md:px-32 px-5 ${
-        isVisible ? "animate" : ""
+      className={`min-h-screen flex flex-col items-center justify-center align-middle md:px-32 my-2 mx-[20%] ${
+        isVisible ? "animate-opacity" : "opacity-0"
       }`}
     >
       <h1 className="text-4xl font-semibold text-center lg:pt-16 pt-24 pb-10">
         Our Reviews
       </h1>
-      <div className="w-full max-w-6xl overflow-x-auto">
-        <div className="flex flex-nowrap gap-2">
+      <div className="w-full max-w-6xl">
+        <div className="flex flex-col items-center sm:flex-row sm:items-start gap-4 sm:gap-4">
           {reviews.map((review, idx) => (
             <div
               key={idx}
-              className={`flex-shrink-0 w-1/3 slide-in ${
-                isVisible ? "animate" : ""
+              className={`flex-shrink-0 w-full sm:w-1/3 ${
+                isVisible ? "animate-slide-in" : "opacity-0"
               }`}
-              style={{ animationDelay: `${idx * 0.3}s ` }} // Staggered delay
+              style={{ animationDelay: `${idx * 0.3}s` }} // Staggered delay
             >
               <ReviewCard
                 img={review.img}

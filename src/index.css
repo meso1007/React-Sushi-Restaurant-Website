@@ -45,3 +45,9 @@ body {
 .main-title {
   font-family: 'Sundays', 'Poppins', 'Roboto', sans-serif;
 }
+
+@media (max-width: 640px) {
+  .video-container {
+    pointer-events: none; /* Disable interactions with the video */
+  }
+}
