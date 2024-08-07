@@ -13,21 +13,21 @@ const Home = () => {
   const reviews = [
     {
       text: "Amazing food and great atmosphere! The best dining experience I have ever had.",
-      img: "/Assets/customer/customer1.jpg",
+      img: "./Assets/customer/customer1.jpg",
       name: "John Doe",
       bestDish: "Spicy Grilled Chicken",
       rating: 4.5,
     },
     {
       text: "The service was exceptional and the dishes were absolutely delicious.",
-      img: "/Assets/customer/customer2.jpg",
+      img: "./Assets/customer/customer2.jpg",
       name: "Jane Smith",
       rating: 5,
       bestDish: "Spicy Grilled Chicken",
     },
     {
       text: "A wonderful experience from start to finish. Highly recommend it!",
-      img: "/Assets/customer/customer3.jpg",
+      img: "./Assets/customer/customer3.jpg",
       name: "Emily Johnson",
       rating: 4,
       bestDish: "Spicy Grilled Chicken",
