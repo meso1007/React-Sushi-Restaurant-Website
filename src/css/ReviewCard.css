@@ -1,0 +1,32 @@
+.review-card {
+    padding: 1.25rem; /* 5 units */
+    background-color: #ffffff; /* 背景色 */
+    border-radius: 0.5rem; /* 角の丸み */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* シャドウ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* センタリング */
+    width: 20rem; /* 固定幅 */
+    height: auto; /* 高さ自動調整 */
+  }
+  
+  .review-card-img {
+    width: 6rem; /* 24 units */
+    height: 6rem; /* 24 units */
+    object-fit: cover; /* 画像のフィット */
+    border-radius: 50%; /* 円形の画像 */
+  }
+  
+  .review-card-title {
+    font-size: 1.25rem; /* フォントサイズ */
+    font-weight: 600; /* フォントウェイト */
+    margin-top: 1rem; /* 上のマージン */
+  }
+  
+  .review-card-text {
+    margin-top: 0.5rem; /* 上のマージン */
+    color: #4a4a4a; /* テキストカラー */
+    text-align: center; /* テキストの中央揃え */
+  }
+  
