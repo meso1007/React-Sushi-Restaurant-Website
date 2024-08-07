@@ -4,7 +4,7 @@ import Button from "../layouts/Button";
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [showNav, setShowNav] = useState(true); // Changed default to true
+  const [showNav, setShowNav] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
@@ -27,6 +27,11 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrollPosition]);
+
+  useEffect(() => {
+    // Close the menu on location change
+    setMenuOpen(false);
+  }, [location]);
 
   const isActive = (path) =>
     location.pathname === path
@@ -79,7 +84,9 @@ const Header = () => {
               className="absolute top-4 right-4 text-2xl text-white"
               onClick={() => setMenuOpen(false)}
               style={{ zIndex: 50 }}
-            ></button>
+            >
+              ✖️
+            </button>
           )}
           <ul className="flex flex-col h-full justify-center items-center space-y-6 p-8 bg-darkcolor bg-opacity-90">
             <li>

@@ -2,7 +2,13 @@
 
 @font-face {
   font-family: 'Sundays';
-  src: url('../public/fonts/Sunday.ttf') format('truetype'); /* ここはそのまま */
+  src: url('../public/fonts/Sunday.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Galorines';
+  src: url('../public/fonts/Galorine.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -28,11 +34,12 @@
   transform: translateY(0);
 }
 
+
 body {
-    font-family: 'Poppins', 'Roboto', sans-serif;
-    font-style: normal;    
-    font-weight: 400;
-    initial-letter: 2rem;
+  font-family:'Galorines', 'Druk Cond Trial', 'Poppins', 'Roboto', sans-serif;
+  font-style: normal;    
+  font-weight: 400;
+  initial-letter: 2rem;
 }
 
 .main-title {
